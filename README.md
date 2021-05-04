@@ -86,3 +86,31 @@ const FormControl = styled.div`
 ### 78 mediaQuery書き方
 
 ---
+
+### 79 CSS module使い方
+
+<details><summary>ファイル名どう書く？</summary>
+
+`Button.module.css`
+
+</details>
+
+<details><summary>インポートの仕方</summary>
+
+`import styles from './xxx'`
+
+</details>
+
+<details><summary>JSX書き方</summary>
+
+```javascript
+
+<button className={styles.button}></button>
+
+```
+
+---
+
+
+
+
