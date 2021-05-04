@@ -2,35 +2,6 @@
 
 ## section6 CSS-stylingについて学習
 
-### 76 styled-components
-
-ボタンのスタイルをstyled-componentsを使用
-
-<details><summary>書き方</summary>
-
-```javascript
-const Button = styled.button`
-  font: ,
-  &:hover { }
-`;
-```
-
-</details>
-
----
-
-### 75 クラス名を動的に付け外し
-
-<details><summary>stateに応じてクラス名を付けるには？</summary>
-
-```jsx
-<div className={`form-control ${!isValid ? 'invalid` : ''}`}>
-
-```
-</details>
-
----
-
 ### 74 インラインスタイル
 
 <details><Summary>機能改善：　Add Goalボタン</Summary>
@@ -58,3 +29,61 @@ const Button = styled.button`
 </details>
 
 ---
+
+### 75 クラス名を動的に付け外し
+
+<details><summary>stateに応じてクラス名を付けるには？</summary>
+
+```jsx
+<div className={`form-control ${!isValid ? 'invalid` : ''}`}>
+
+```
+</details>
+
+---
+
+### 76 styled-components
+
+ボタンのスタイルをstyled-componentsを使用
+
+<details><summary>書き方</summary>
+
+```javascript
+const Button = styled.button`
+  font: ,
+  &:hover { }
+`;
+```
+
+</details>
+
+---
+
+### 77 styled-componentsにpropsを渡して、動的にスタイリング
+
+<details><summary>styledComponentsにprops渡す</summary>
+
+
+```react
+const FormControl = styled.div`
+  & input {
+    background: ${(props) => (props.invalid ? '' : '' )};
+  }
+`;
+
+```
+
+```jsx
+
+<FormControl invalid={!isValid}></FormControl>
+
+```
+
+</details>
+
+---
+
+
+
+
+
