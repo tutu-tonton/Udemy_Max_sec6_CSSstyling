@@ -2,6 +2,23 @@
 
 ## section6 CSS-stylingについて学習
 
+### 76 styled-components
+
+ボタンのスタイルをstyled-componentsを使用
+
+<details><summary>書き方</summary>
+
+```javascript
+const Button = styled.button`
+  font: ,
+  &:hover { }
+`;
+```
+
+</details>
+
+---
+
 ### 75 クラス名を動的に付け外し
 
 <details><summary>stateに応じてクラス名を付けるには？</summary>
@@ -18,7 +35,7 @@
 
 <details><Summary>機能改善：　Add Goalボタン</Summary>
 
-> ⚠️ 未入力でも追加されてしまう問題
+ ⚠️ 未入力でも追加されてしまう問題
 
  |-> 追加できないようにする
 
@@ -26,7 +43,9 @@
 
  |-> 文字入力し始めたら、フィードバック解除
 
-> CSSインライン書き方注意点
+</details>
+
+<details><summary>CSSインライン書き方注意点</summary>
 
 ```jsx
 <label style={{ backgroundColor: 'red' }}>
